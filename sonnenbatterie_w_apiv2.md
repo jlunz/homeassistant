@@ -1,4 +1,9 @@
-For a new (2020) sonnenBatterie 10 system, Software is at version 1.5.5
+For a new (2020) sonnenBatterie 10 system, software is at version 1.5.5
+
+This uses the status endpoint
+![image](https://user-images.githubusercontent.com/117189/109875033-30b0b300-7c70-11eb-9176-493a4249e9c7.png)
+
+
 
 secrets.yaml
 ```yaml
