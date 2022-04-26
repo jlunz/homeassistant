@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=" kyulqtll idc0_332" lang="en"><head>
+<html class=" bzuqpsdon idc0_338" lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <title>sonnenBatterie API</title>
@@ -30,21 +30,330 @@
 </head>
 <body>
 
-<div id="swagger-ui"><section data-reactroot="" class="swagger-ui swagger-container"><div class="topbar"><div class="wrapper"><div class="topbar-wrapper"><a href="#" title="Swagger UX" class="link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqRJREFUeNrEVz1s00AUfnGXii5maMXoEUEHVwIpEkPNgkBdMnQoU5ytiKHJwpp2Q2JIO8DCUDOxIJFIVOoWZyJSh3pp1Q2PVVlcCVBH3ufeVZZ9Zye1Ay86nXV+ue/9fO/lheg/Se02X1rvksmbnTiKvuxQMBNgBnN4a/LCbmnUAP6JV58NCUsBC8CuAJxGPF47OgNqBaA93tolUhnx6jC4NxGwyOEwlccyAs+3kwdzKq0HDn2vEBTi8J2XpyMaywNDE157BhXUE3zJhlq8GKq+Zd2zaWHepPA8oN9XkfLmRdOiJV4XUUg/IyWncLjCYY/SHndV2u7zHr3bPKZtdxgboJOnthvrfGj/oMf3G0r7JVmNlLfKklmrt2MvvcNO7LFOhoFHfuAJI5o6ta10jpt5CQLgwXhXG2YIwvu+34qf78ybOjWTnWwkgR36d7JqJOrW0hHmNrKg9xhiS4+1jFmrxymh03B0w+6kURIAu3yHtOD5oaUNojMnGgbcctNvwdAnyxvxRR+/vaJnjzbpzcZX+nN1SdGv85i9eH8w3qPO+mdm/y4dnQ1iI8Fq6Nf4cxL6GWSjiFDSs0VRnxC5g0xSB2cgHpaseTxfqOv5uoHkNQ6Ha/N1Yz9mNMppEkEkYKj79q6uCq4bCHcSX3fJ0Vk/k9siASjCm1N6gZH6Ec9IXt2WkFES2K/ixoIyktJPAu/ptOA1SgO5zqtr6KASJPF0nMV8dgMsRhRPOcMwqQAOoi0VAIMLAEWJ6YYC1c8ibj1GP51RqwzYwZVMHQuvOzMCBUtb2tGHx5NAdLKqp5AX7Ng4d+Zi8AGDI9z1ijx9yaCH04y3GCP2S+QcvaGl+pcxyUBvinFlawoDQjHSelX8hQEoIrAq8p/mgC88HOS1YCl/BRgAmiD/1gn6Nu8AAAAASUVORK5CYII=" alt="Swagger UI" width="30" height="30"><span>swagger</span></a><form class="download-url-wrapper"><input type="text" class="download-url-input"><button class="download-url-button button">Explore</button></form></div></div></div><div class="swagger-ui"><div><!-- react-empty: 13 --><div class="information-container wrapper"><section class="block col-12"><div class="info"><hgroup class="main"><h2 class="title"><!-- react-text: 94 -->sonnenBatterie API<!-- /react-text --><small><pre class="version"><!-- react-text: 97 --> <!-- /react-text --><!-- react-text: 98 -->1.0.0<!-- /react-text --><!-- react-text: 99 --> <!-- /react-text --></pre></small></h2><pre class="base-url"><!-- react-text: 101 -->[ Base URL: <!-- /react-text --><!-- react-text: 102 -->= ip of the system<!-- /react-text --><!-- react-text: 103 --> ]<!-- /react-text --></pre><!-- react-text: 104 --><!-- /react-text --></hgroup><div class="description"><div class="markdown"><div><span><p>The
+<div id="swagger-ui"><section data-reactroot="" class="swagger-ui swagger-container"><div class="topbar"><div class="wrapper"><div class="topbar-wrapper"><a href="#" title="Swagger UX" class="link"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqRJREFUeNrEVz1s00AUfnGXii5maMXoEUEHVwIpEkPNgkBdMnQoU5ytiKHJwpp2Q2JIO8DCUDOxIJFIVOoWZyJSh3pp1Q2PVVlcCVBH3ufeVZZ9Zye1Ay86nXV+ue/9fO/lheg/Se02X1rvksmbnTiKvuxQMBNgBnN4a/LCbmnUAP6JV58NCUsBC8CuAJxGPF47OgNqBaA93tolUhnx6jC4NxGwyOEwlccyAs+3kwdzKq0HDn2vEBTi8J2XpyMaywNDE157BhXUE3zJhlq8GKq+Zd2zaWHepPA8oN9XkfLmRdOiJV4XUUg/IyWncLjCYY/SHndV2u7zHr3bPKZtdxgboJOnthvrfGj/oMf3G0r7JVmNlLfKklmrt2MvvcNO7LFOhoFHfuAJI5o6ta10jpt5CQLgwXhXG2YIwvu+34qf78ybOjWTnWwkgR36d7JqJOrW0hHmNrKg9xhiS4+1jFmrxymh03B0w+6kURIAu3yHtOD5oaUNojMnGgbcctNvwdAnyxvxRR+/vaJnjzbpzcZX+nN1SdGv85i9eH8w3qPO+mdm/y4dnQ1iI8Fq6Nf4cxL6GWSjiFDSs0VRnxC5g0xSB2cgHpaseTxfqOv5uoHkNQ6Ha/N1Yz9mNMppEkEkYKj79q6uCq4bCHcSX3fJ0Vk/k9siASjCm1N6gZH6Ec9IXt2WkFES2K/ixoIyktJPAu/ptOA1SgO5zqtr6KASJPF0nMV8dgMsRhRPOcMwqQAOoi0VAIMLAEWJ6YYC1c8ibj1GP51RqwzYwZVMHQuvOzMCBUtb2tGHx5NAdLKqp5AX7Ng4d+Zi8AGDI9z1ijx9yaCH04y3GCP2S+QcvaGl+pcxyUBvinFlawoDQjHSelX8hQEoIrAq8p/mgC88HOS1YCl/BRgAmiD/1gn6Nu8AAAAASUVORK5CYII=" alt="Swagger UI" width="30" height="30"><span>swagger</span></a><form class="download-url-wrapper"><input type="text" class="download-url-input"><button class="download-url-button button">Explore</button></form></div></div></div><div class="swagger-ui"><div><!-- react-empty: 13 --><div class="information-container wrapper"><section class="block col-12"><div class="info"><hgroup class="main"><h2 class="title"><!-- react-text: 103 -->sonnenBatterie API<!-- /react-text --><small><pre class="version"><!-- react-text: 106 --> <!-- /react-text --><!-- react-text: 107 -->1.0.0<!-- /react-text --><!-- react-text: 108 --> <!-- /react-text --></pre></small></h2><pre class="base-url"><!-- react-text: 110 -->[ Base URL: <!-- /react-text --><!-- react-text: 111 -->= ip of the system<!-- /react-text --><!-- react-text: 112 --> ]<!-- /react-text --></pre><!-- react-text: 113 --><!-- /react-text --></hgroup><div class="description"><div class="markdown"><div><span><p>The
  sonnenBatterie API allows to remote control a sonnenBatterie. Most API 
 endpoints require an authentication token. This token is available in 
 the sonnenBatterie Dashboard (‘Software-Integration’).<br>
 Unproteced endpoints are marked below.</p>
 <p>Example request:</p>
 <p><code>curl --header ‘Auth-Token: TOKEN’ <a href="http://system-ip/api/v2/latestdata" target="_blank">http://SYSTEM-IP/api/v2/latestdata</a></code></p>
-</span></div></div></div></div></section></div><div class="wrapper"><section class="block col-12 block-desktop col-12-desktop"><div><div class="opblock-tag-section is-open"><h4 class="opblock-tag no-desc" id="operations-tag-api"><a class="nostyle" href="#/api"><span>api</span></a><div></div><button class="expand-operation" title="Expand operation"><svg class="arrow" width="20" height="20"><use href="#large-arrow-down" xlink:href="#large-arrow-down"></use></svg></button></h4><div style="height: auto; border: medium none; margin: 0px; padding: 0px;"><!-- react-text: 35 --> <!-- /react-text --><div class="opblock opblock-post" id="operations-api-postApiV2SetpointDischargeWatt"><div class="opblock-summary opblock-summary-post"><span class="opblock-summary-method">POST</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/postApiV2SetpointDischargeWatt"><span>/api/v2/setpoint/discharge/{watt}</span></a><!-- react-empty: 42 --></span><div class="opblock-summary-description">Sends a discharge command to the battery (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get" id="operations-api-getApiV2Status"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2Status"><span>/api/v2/status</span></a><!-- react-empty: 51 --></span><div class="opblock-summary-description">Gets status data for this sonnenBatterie</div></div><noscript></noscript></div><div class="opblock opblock-put" id="operations-api-putApiV2Configurations"><div class="opblock-summary opblock-summary-put"><span class="opblock-summary-method">PUT</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/putApiV2Configurations"><span>/api/v2/configurations</span></a><!-- react-empty: 60 --></span><div class="opblock-summary-description">Sets the value of configurations (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get" id="operations-api-getApiV2Latestdata"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2Latestdata"><span>/api/v2/latestdata</span></a><!-- react-empty: 69 --></span><div class="opblock-summary-description">Gets latest data for this sonnenBatterie (Read API)</div></div><noscript></noscript></div><div class="opblock opblock-post" id="operations-api-postApiV2SetpointChargeWatt"><div class="opblock-summary opblock-summary-post"><span class="opblock-summary-method">POST</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/postApiV2SetpointChargeWatt"><span>/api/v2/setpoint/charge/{watt}</span></a><!-- react-empty: 78 --></span><div class="opblock-summary-description">Sends a charge command to the battery (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get" id="operations-api-getApiV2ConfigurationsName"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2ConfigurationsName"><span>/api/v2/configurations/{name}</span></a><!-- react-empty: 87 --></span><div class="opblock-summary-description">Gets the value of a given configuration (Read API)</div></div><noscript></noscript></div><!-- react-text: 90 --> <!-- /react-text --></div></div></div></section></div><div class="wrapper"><section class="block col-12 block-desktop col-12-desktop"><!-- react-empty: 22 --></section></div></div></div><div class="wrapper"><section class=""><!-- react-empty: 25 --></section></div></section></div>
+</span></div></div></div></div></section></div><div class="wrapper"><section class="block col-12 block-desktop col-12-desktop"><div><div class="opblock-tag-section is-open"><h4 class="opblock-tag no-desc" id="operations-tag-api"><a class="nostyle" href="#/api"><span>api</span></a><div></div><button class="expand-operation" title="Expand operation"><svg class="arrow" width="20" height="20"><use href="#large-arrow-down" xlink:href="#large-arrow-down"></use></svg></button></h4><div style="height: auto; border: medium none; margin: 0px; padding: 0px;"><!-- react-text: 35 --> <!-- /react-text --><div class="opblock opblock-post" id="operations-api-postApiV2SetpointDischargeWatt"><div class="opblock-summary opblock-summary-post"><span class="opblock-summary-method">POST</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/postApiV2SetpointDischargeWatt"><span>/api/v2/setpoint/discharge/{watt}</span></a><!-- react-empty: 42 --></span><div class="opblock-summary-description">Sends a discharge command to the battery (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get is-open" id="operations-api-getApiV2Status"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2Status"><span>/api/v2/status</span></a><!-- react-empty: 51 --></span><div class="opblock-summary-description">Gets status data for this sonnenBatterie</div></div><div style="height: auto; border: medium none; margin: 0px; padding: 0px;"><!-- react-text: 265 --> <!-- /react-text --><div class="opblock-body"><div class="opblock-description-wrapper"><div class="opblock-description"><div class="markdown"><div><span><p>Gets status data for this sonnenBatterie. This endpoint does not require an authentication token.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Example Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+      <th>Data type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apparent_output</td>
+      <td>226</td>
+      <td>VA, volt-ampere</td>
+      <td>All AC output of apparent power in VA</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>BackupBuffer</td>
+      <td>0</td>
+      <td>%, percentage</td>
+      <td>Backup-buffer in percentage that is set on the system.</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>BatteryCharging</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the charge status. True if charging</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>BatteryDischarging</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the discharge status. True if discharging</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>Consumption_Avg</td>
+      <td>223</td>
+      <td>W, watt</td>
+      <td>House consumption in watts, average over the last 60s</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Consumption_W</td>
+      <td>232</td>
+      <td>W, watt</td>
+      <td>House consumption in watts, direct measurement </td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Fac</td>
+      <td>49.999000549316400</td>
+      <td>Hz, hertz</td>
+      <td>AC frequency in hertz</td>
+      <td>Float</td>
+    </tr>
+    <tr>
+      <td>FlowConsumptionBattery</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if battery feeds the consumption</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>FlowConsumptionGrid</td>
+      <td>true</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if grid feeds the consumption</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>FlowConsumptionProduction</td>
+      <td>true</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if production feeds the consumption
+      </td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>FlowGridBattery</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if battery is charging from grid</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>FlowProductionBattery</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if production is charging the battery
+      </td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>FlowProductionGrid</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the energy flow at the installation site. True if production feeds into the grid</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>GridFeedIn_W</td>
+      <td>-208</td>
+      <td>W, watt</td>
+      <td>Grid Feed in negative is consumption and positive is feed in </td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>IsSystemInstalled</td>
+      <td>1</td>
+      <td>-</td>
+      <td>System is installed or not</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>OperatingMode</td>
+      <td>2</td>
+      <td>-</td>
+      <td>Operating mode that is set on the system:
+        <ul>
+          <li>1: Manual charging or discharging via API</li>
+          <li>2: Automatic Self Consumption. Default</li>
+        </ul>
+      </td><td>Integer</td>
+    </tr>
+    <tr>
+      <td>Pac_total_W</td>
+      <td>-5</td>
+      <td>W, watt</td>
+      <td>AC Power greater than ZERO is discharging Inverter AC Power less than ZERO is charging</td>
+      <td>Signed Integer</td>
+    </tr>
+    <tr>
+      <td>Production_W</td>
+      <td>28</td>
+      <td>W, watt</td>
+      <td>PV production in watts</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>RSOC</td>
+      <td>4</td>
+      <td>%, percentage</td>
+      <td>Relative state of charge</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>RemainingCapacity_W</td>
+      <td>674</td>
+      <td>Wh</td>
+      <td>Remaining capacity based on RSOC</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Sac1</td>
+      <td>75</td>
+      <td>VA, volt-ampere</td>
+      <td>Output of apparent power in VA on Phase 1</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Sac2</td>
+      <td>75</td>
+      <td>VA, volt-ampere</td>
+      <td>Output of apparent power in VA on Phase 2</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Sac3</td>
+      <td>76</td>
+      <td>VA, volt-ampere</td>
+      <td>Output of apparent power in VA on Phase 3</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>SystemStatus</td>
+      <td>OnGrid</td>
+      <td>-</td>
+      <td>String that indicates if the system is connected to the grid (“OnGrid”) or disconnected (“OffGrid”)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>Timestamp</td>
+      <td>2020-12-10 11:26:01</td>
+      <td>-</td>
+      <td>Local system time</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>USOC</td>
+      <td>0</td>
+      <td>%, percentage</td>
+      <td>User state of charge</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Uac</td>
+      <td>230</td>
+      <td>V, volt</td>
+      <td>AC voltage in volts</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Ubat</td>
+      <td>50</td>
+      <td>V, volt</td>
+      <td>Battery voltage in volts</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>dischargeNotAllowed</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the discharge status. True if no discharge allowed, based on battery maintenance</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>generator_autostart</td>
+      <td>false</td>
+      <td>-</td>
+      <td>Boolean that indicates the autostart setting of the generator.</td>
+      <td>Boolean</td>
+    </tr>
+  </tbody>
+</table>
+</span></div></div></div></div><div class="opblock-section"><div class="opblock-section-header"><div class="tab-header"><h4 class="opblock-title">Parameters</h4></div><div class="try-out"><button class="btn try-out__btn">Try it out </button></div></div><div class="opblock-description-wrapper"><p>No parameters</p></div></div><div class="execute-wrapper"></div><div class="responses-wrapper"><div class="opblock-section-header"><h4>Responses</h4><label><span>Response content type</span><div class="content-type-wrapper execute-content-type"><select class="content-type"><option value="application/json" selected="selected">application/json</option></select></div></label></div><div class="responses-inner"><table class="responses-table"><thead><tr class="responses-header"><td class="col col_header response-col_status">Code</td><td class="col col_header response-col_description">Description</td></tr></thead><tbody><tr class="response "><td class="col response-col_status">200</td><td class="col response-col_description"><div class="response-col_description__inner"><div class="markdown"><div><span><pre>{
+  "Apparent_output": 96,
+  "BackupBuffer": "0",
+  "BatteryCharging": false,
+  "BatteryDischarging": false,
+  "Consumption_W": 0,
+  "Fac": 50.0239143371582,
+  "FlowConsumptionBattery": false,
+  "FlowConsumptionGrid": false,
+  "FlowConsumptionProduction": false,
+  "FlowGridBattery": false,
+  "FlowProductionBattery": false,
+  "FlowProductionGrid": false,
+  "GridFeedIn_W": -3,
+  "IsSystemInstalled": 1,
+  "OperatingMode": "2",
+  "Pac_total_W": 7,
+  "Production_W": 0,
+  "RSOC": 21,
+  "Sac1": 96,
+  "Sac2": null,
+  "Sac3": null,
+  "SystemStatus": "OnGrid",
+  "Timestamp": "2020-03-26 17:10:06",
+  "USOC": 12,
+  "Uac": 238,
+  "Ubat": 209,
+  "dischargeNotAllowed": false,
+  "generator_autostart": false
+}
+</pre></span></div></div></div><div class="response-content-type"><!-- react-empty: 304 --></div></td></tr></tbody></table></div></div></div><!-- react-text: 305 --> <!-- /react-text --></div></div><div class="opblock opblock-put" id="operations-api-putApiV2Configurations"><div class="opblock-summary opblock-summary-put"><span class="opblock-summary-method">PUT</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/putApiV2Configurations"><span>/api/v2/configurations</span></a><!-- react-empty: 60 --></span><div class="opblock-summary-description">Sets the value of configurations (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get" id="operations-api-getApiV2Latestdata"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2Latestdata"><span>/api/v2/latestdata</span></a><!-- react-empty: 69 --></span><div class="opblock-summary-description">Gets latest data for this sonnenBatterie (Read API)</div></div><noscript></noscript></div><div class="opblock opblock-post" id="operations-api-postApiV2SetpointChargeWatt"><div class="opblock-summary opblock-summary-post"><span class="opblock-summary-method">POST</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/postApiV2SetpointChargeWatt"><span>/api/v2/setpoint/charge/{watt}</span></a><!-- react-empty: 78 --></span><div class="opblock-summary-description">Sends a charge command to the battery (Write API)</div></div><noscript></noscript></div><div class="opblock opblock-get" id="operations-api-getApiV2ConfigurationsName"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2ConfigurationsName"><span>/api/v2/configurations/{name}</span></a><!-- react-empty: 87 --></span><div class="opblock-summary-description">Gets the value of a given configuration (Read API)</div></div><noscript></noscript></div><div class="opblock opblock-get is-open" id="operations-api-getApiV2Powermeter"><div class="opblock-summary opblock-summary-get"><span class="opblock-summary-method">GET</span><span class="opblock-summary-path"><a class="nostyle" href="#/api/getApiV2Powermeter"><span>/api/v2/powermeter</span></a><!-- react-empty: 96 --></span><div class="opblock-summary-description">Gets the latest power-meter measurements (Read API)</div></div><div style="height: auto; border: medium none; margin: 0px; padding: 0px;"><!-- react-text: 214 --> <!-- /react-text --><div class="opblock-body"><div class="opblock-description-wrapper"><div class="opblock-description"><div class="markdown"><div><span><p>Gets the latest power-meter measurements.</p>
+</span></div></div></div></div><div class="opblock-section"><div class="opblock-section-header"><div class="tab-header"><h4 class="opblock-title">Parameters</h4></div><div class="try-out"><button class="btn try-out__btn">Try it out </button></div></div><div class="opblock-description-wrapper"><p>No parameters</p></div></div><div class="execute-wrapper"></div><div class="responses-wrapper"><div class="opblock-section-header"><h4>Responses</h4><label><span>Response content type</span><div class="content-type-wrapper execute-content-type"><select class="content-type"><option value="application/json" selected="selected">application/json</option></select></div></label></div><div class="responses-inner"><table class="responses-table"><thead><tr class="responses-header"><td class="col col_header response-col_status">Code</td><td class="col col_header response-col_description">Description</td></tr></thead><tbody><tr class="response "><td class="col response-col_status">200</td><td class="col response-col_description"><div class="response-col_description__inner"><div class="markdown"><div><span><pre>[
+  {
+    "a_l1": 0,
+    "a_l2": 0,
+    "a_l3": 0,
+    "channel": 1,
+    "deviceid": 4,
+    "direction": "production",
+    "error": -1,
+    "kwh_exported": 0,
+    "kwh_imported": 0,
+    "v_l1_l2": 0,
+    "v_l1_n": 0,
+    "v_l2_l3": 0,
+    "v_l2_n": 0,
+    "v_l3_l1": 0,
+    "v_l3_n": 0,
+    "va_total": 0,
+    "var_total": 0,
+    "w_l1": 0,
+    "w_l2": 0,
+    "w_l3": 0,
+    "w_total": 0
+  },
+  {
+    "a_l1": 0,
+    "a_l2": 0,
+    "a_l3": 0,
+    "channel": 2,
+    "deviceid": 4,
+    "direction": "consumption",
+    "error": -1,
+    "kwh_exported": 0,
+    "kwh_imported": 0,
+    "v_l1_l2": 0,
+    "v_l1_n": 0,
+    "v_l2_l3": 0,
+    "v_l2_n": 0,
+    "v_l3_l1": 0,
+    "v_l3_n": 0,
+    "va_total": 0,
+    "var_total": 0,
+    "w_l1": 0,
+    "w_l2": 0,
+    "w_l3": 0,
+    "w_total": 0
+  }
+]</pre></span></div></div></div><div class="response-content-type"><!-- react-empty: 253 --></div></td></tr><tr class="response "><td class="col response-col_status">401</td><td class="col response-col_description"><div class="response-col_description__inner"><div class="markdown"><div><span><p>401 Unauthorized</p>
+</span></div></div></div><div class="response-content-type"><!-- react-empty: 262 --></div></td></tr></tbody></table></div></div></div><!-- react-text: 263 --> <!-- /react-text --></div></div><!-- react-text: 99 --> <!-- /react-text --></div></div></div></section></div><div class="wrapper"><section class="block col-12 block-desktop col-12-desktop"><!-- react-empty: 22 --></section></div></div></div><div class="wrapper"><section class=""><!-- react-empty: 25 --></section></div></section></div>
 
 <script src="sonnenBatterie%20API_files/swagger-ui-bundle.js"> </script>
 <script src="sonnenBatterie%20API_files/swagger-ui-standalone-preset.js"> </script>
 <script>
 window.onload = function() {
 
-  var spec = {"info": {"version": "1.0.0", "description": "The sonnenBatterie API allows to remote control a sonnenBatterie. Most API endpoints require an authentication token. This token is available in the sonnenBatterie Dashboard ('Software-Integration').\nUnproteced endpoints are marked below.\n\nExample request:\n\n<code>curl --header 'Auth-Token: TOKEN' http://SYSTEM-IP/api/v2/latestdata</code>", "title": "sonnenBatterie API"}, "paths": {"/api/v2/setpoint/discharge/{watt}": {"post": {"responses": {"201": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"description": "For example: <b>2000</b>", "format": "int32", "required": true, "maximum": 1000000, "minimum": 0, "in": "path", "type": "integer", "name": "watt"}], "produces": ["application/json"], "description": "The discharging power of a storage system can be controlled by setting a setpoint in watts. The corresponding value of the setpoint is kept until the battery receives a new charging or discharging value. <br>If VPP is active, the request will be rejected.", "tags": ["api"], "summary": "Sends a discharge command to the battery (Write API)", "consumes": ["application/json"], "operationId": "postApiV2SetpointDischargeWatt"}}, "/api/v2/status": {"get": {"responses": {"200": {"description": "<pre>{\n  \"Apparent_output\": 96,\n  \"BackupBuffer\": \"0\",\n  \"BatteryCharging\": false,\n  \"BatteryDischarging\": false,\n  \"Consumption_W\": 0,\n  \"Fac\": 50.0239143371582,\n  \"FlowConsumptionBattery\": false,\n  \"FlowConsumptionGrid\": false,\n  \"FlowConsumptionProduction\": false,\n  \"FlowGridBattery\": false,\n  \"FlowProductionBattery\": false,\n  \"FlowProductionGrid\": false,\n  \"GridFeedIn_W\": -3,\n  \"IsSystemInstalled\": 1,\n  \"OperatingMode\": \"2\",\n  \"Pac_total_W\": 7,\n  \"Production_W\": 0,\n  \"RSOC\": 21,\n  \"Sac1\": 96,\n  \"Sac2\": null,\n  \"Sac3\": null,\n  \"SystemStatus\": \"OnGrid\",\n  \"Timestamp\": \"2020-03-26 17:10:06\",\n  \"USOC\": 12,\n  \"Uac\": 238,\n  \"Ubat\": 209,\n  \"dischargeNotAllowed\": false,\n  \"generator_autostart\": false\n}\n</pre>"}}, "produces": ["application/json"], "operationId": "getApiV2Status", "tags": ["api"], "summary": "Gets status data for this sonnenBatterie", "description": "Gets status data for this sonnenBatterie. This endpoint does not require an authentication token."}}, "/api/v2/configurations": {"put": {"responses": {"200": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "produces": ["application/json"], "operationId": "putApiV2Configurations", "description": "Sets the value of these configurations:\n<ul>\n  <li><b>EM_OperatingMode</b></li>\n  <li><b>NVM_PfcFixedCosPhi</b></li>\n  <li><b>NVM_PfcIsFixedCosPhiActive</b></li>\n  <li><b>NVM_PfcIsFixedCosPhiLagging</b></li>\n  <li><b>EM_ToU_Schedule</b></li>\n</ul>\n<br>\n<p>The operating mode (<b>EM_OperatingMode</b>) can not be changed if VPP is active</p>\n<br>Example:\n<ul>\n  <li><code>curl -X PUT -d NVM_PfcFixedCosPhi=1 --header 'Auth-Token: TOKEN'\n      http://SYSTEM-IP/api/v2/configurations</code></li>\n  <li><code>curl -X PUT -d NVM_PfcFixedCosPhi=1 -d NVM_PfcIsFixedCosPhiActive=0 --header 'Auth-Token: TOKEN'\n      http://SYSTEM-IP/api/v2/configurations</code></li>\n</ul>\n", "tags": ["api"], "consumes": ["application/json"], "summary": "Sets the value of configurations (Write API)"}}, "/api/v2/latestdata": {"get": {"responses": {"200": {"description": "<pre>{\n  \"Consumption_W\": 0,\n  \"FullChargeCapacity\": 0,\n  \"GridFeedIn_W\": 0,\n  \"Pac_total_W\": 0,\n  \"Production_W\": 0,\n  \"RSOC\": 0,\n  \"SetPoint_W\": 0,\n  \"Timestamp\": \"2019-09-19 15:07:19\",\n  \"USOC\": 0,\n  \"UTC_Offet\": 2,\n  \"ic_status\": {\n    \"DC Shutdown Reason\": {\n      \"Critical BMS Alarm\": false,\n      \"Error condition in BMS initialization\": false,\n      \"HW_Shutdown\": false,\n      \"HardWire Over Voltage\": false,\n      \"HardWired Dry Signal A\": false,\n      \"HardWired Under Voltage\": false,\n      \"Initialization Timeout\": false,\n      \"Initialization of AC contactor failed\": false,\n      \"Initialization of BMS hardware failed\": false,\n      \"Initialization of DC contactor failed\": false,\n      \"Initialization of Inverter failed\": false,\n      \"Invalid or no SystemType was set\": false,\n      \"Inverter Over Temperature\": false,\n      \"Inverter Under Voltage\": false,\n      \"Manual shutdown by user\": false,\n      \"Minimum rSOC of System reached\": false,\n      \"No Setpoint received by HC\": false,\n      \"Shutdown Timer started\": false,\n      \"System Validation failed\": false,\n      \"Voltage Monitor Changed\": false\n    },\n    \"Eclipse Led\": {\n      \"Pulsing Green\": false,\n      \"Pulsing Orange\": true,\n      \"Pulsing White\": false,\n      \"Solid Red\": false\n    },\n    \"Flat Status\": {\n      \"Auto Mode\": false,\n      \"Error\": false,\n      \"Full Charge Power\": false,\n      \"Full Discharge Power\": false,\n      \"Not Connected\": false,\n      \"Spare 1\": false,\n      \"Spare 2\": false,\n      \"Spare 3\": false,\n      \"Timeout\": false\n    },\n    \"MISC Status Bits\": {\n      \"Discharge not allowed\": false,\n      \"Min System SOC\": false,\n      \"Min User SOC\": false\n    },\n    \"Microgrid Status\": {\n      \"Continious Power Violation\": false,\n      \"Discharge Current Limit Violation\": false,\n      \"Low Temperature\": false,\n      \"Max System SOC\": false,\n      \"Max User SOC\": false,\n      \"Microgrid Enabled\": false,\n      \"Min System SOC\": false,\n      \"Min User SOC\": false,\n      \"Over Charge Current\": false,\n      \"Over Discharge Current\": false,\n      \"Peak Power Violation\": false,\n      \"Protect is activated\": false,\n      \"Transition to Ongrid Pending\": false\n    },\n    \"Setpoint Priority\": {\n      \"BMS\": false,\n      \"Energy Manager\": false,\n      \"Flat\": false,\n      \"Full Charge Request\": false,\n      \"Inverter\": false,\n      \"Min User SOC\": false,\n      \"Trickle Charge\": false\n    },\n    \"System Validation\": {\n      \"Country Code Set status flag 1\": false,\n      \"Country Code Set status flag 2\": false,\n      \"Self test Error DC Wiring\": false,\n      \"Self test Postponed\": false,\n      \"Self test Precondition not met\": false,\n      \"Self test Running\": false,\n      \"Self test successful finished\": false\n    },\n    \"nrbatterymodules\": 0,\n    \"secondssincefullcharge\": 0,\n    \"statebms\": \"not ready\",\n    \"statecorecontrolmodule\": \"config\",\n    \"stateinverter\": \"not ready\",\n    \"timestamp\": \"Thu Jan 1 01:00:00 1970\"\n  }\n}\n</pre>"}, "401": {"description": "401 Unauthorized"}}, "produces": ["application/json"], "operationId": "getApiV2Latestdata", "tags": ["api"], "summary": "Gets latest data for this sonnenBatterie (Read API)", "description": "Gets latest data for this sonnenBatterie."}}, "/api/v2/setpoint/charge/{watt}": {"post": {"responses": {"201": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"description": "For example: <b>2000</b>", "format": "int32", "required": true, "maximum": 1000000, "minimum": 0, "in": "path", "type": "integer", "name": "watt"}], "produces": ["application/json"], "description": "The charging power of a storage system can be controlled by setting a setpoint in watts. The corresponding value of the setpoint is kept until the battery receives a new charging or discharging value. <br>If VPP is active, the request will be rejected.", "tags": ["api"], "summary": "Sends a charge command to the battery (Write API)", "consumes": ["application/json"], "operationId": "postApiV2SetpointChargeWatt"}}, "/api/v2/configurations/{name}": {"get": {"responses": {"200": {"description": "{ \"EM_OperatingMode\": \"2\" }"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"required": true, "type": "string", "description": "EM_OperatingMode, NVM_PfcFixedCosPhi, NVM_PfcIsFixedCosPhiActive, NVM_PfcIsFixedCosPhiLagging, EM_ToU_Schedule", "in": "path", "name": "name"}], "produces": ["application/json"], "operationId": "getApiV2ConfigurationsName", "description": "Gets the value for one of these configurations: \n <ul><li><b>EM_OperatingMode</b></li><li><b>NVM_PfcFixedCosPhi</b></li><li><b>NVM_PfcIsFixedCosPhiActive</b></li><li><b>NVM_PfcIsFixedCosPhiLagging</b></li><li><b>EM_ToU_Schedule</b></li></ul>", "tags": ["api"], "summary": "Gets the value of a given configuration (Read API)"}}}, "host": "= ip of the system", "swagger": "2.0", "produces": ["application/json"]};
+  var spec = {"info": {"version": "1.0.0", "description": "The sonnenBatterie API allows to remote control a sonnenBatterie. Most API endpoints require an authentication token. This token is available in the sonnenBatterie Dashboard ('Software-Integration').\nUnproteced endpoints are marked below.\n\nExample request:\n\n<code>curl --header 'Auth-Token: TOKEN' http://SYSTEM-IP/api/v2/latestdata</code>", "title": "sonnenBatterie API"}, "paths": {"/api/v2/setpoint/discharge/{watt}": {"post": {"responses": {"201": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"description": "For example: <b>2000</b>", "format": "int32", "required": true, "maximum": 1000000, "minimum": 0, "in": "path", "type": "integer", "name": "watt"}], "produces": ["application/json"], "description": "The discharging power of a storage system can be controlled by setting a setpoint in watts. The corresponding value of the setpoint is kept until the battery receives a new charging or discharging value. <br>If VPP is active, the request will be rejected.", "tags": ["api"], "summary": "Sends a discharge command to the battery (Write API)", "consumes": ["application/json"], "operationId": "postApiV2SetpointDischargeWatt"}}, "/api/v2/status": {"get": {"responses": {"200": {"description": "<pre>{\n  \"Apparent_output\": 96,\n  \"BackupBuffer\": \"0\",\n  \"BatteryCharging\": false,\n  \"BatteryDischarging\": false,\n  \"Consumption_W\": 0,\n  \"Fac\": 50.0239143371582,\n  \"FlowConsumptionBattery\": false,\n  \"FlowConsumptionGrid\": false,\n  \"FlowConsumptionProduction\": false,\n  \"FlowGridBattery\": false,\n  \"FlowProductionBattery\": false,\n  \"FlowProductionGrid\": false,\n  \"GridFeedIn_W\": -3,\n  \"IsSystemInstalled\": 1,\n  \"OperatingMode\": \"2\",\n  \"Pac_total_W\": 7,\n  \"Production_W\": 0,\n  \"RSOC\": 21,\n  \"Sac1\": 96,\n  \"Sac2\": null,\n  \"Sac3\": null,\n  \"SystemStatus\": \"OnGrid\",\n  \"Timestamp\": \"2020-03-26 17:10:06\",\n  \"USOC\": 12,\n  \"Uac\": 238,\n  \"Ubat\": 209,\n  \"dischargeNotAllowed\": false,\n  \"generator_autostart\": false\n}\n</pre>"}}, "produces": ["application/json"], "operationId": "getApiV2Status", "tags": ["api"], "summary": "Gets status data for this sonnenBatterie", "description": "<p>Gets status data for this sonnenBatterie. This endpoint does not require an authentication token.</p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Example Value</th>\n      <th>Unit</th>\n      <th>Description</th>\n      <th>Data type</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Apparent_output</td>\n      <td>226</td>\n      <td>VA, volt-ampere</td>\n      <td>All AC output of apparent power in VA</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>BackupBuffer</td>\n      <td>0</td>\n      <td>%, percentage</td>\n      <td>Backup-buffer in percentage that is set on the system.</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>BatteryCharging</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the charge status. True if charging</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>BatteryDischarging</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the discharge status. True if discharging</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>Consumption_Avg</td>\n      <td>223</td>\n      <td>W, watt</td>\n      <td>House consumption in watts, average over the last 60s</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Consumption_W</td>\n      <td>232</td>\n      <td>W, watt</td>\n      <td>House consumption in watts, direct measurement </td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Fac</td>\n      <td>49.999000549316400</td>\n      <td>Hz, hertz</td>\n      <td>AC frequency in hertz</td>\n      <td>Float</td>\n    </tr>\n    <tr>\n      <td>FlowConsumptionBattery</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if battery feeds the consumption</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>FlowConsumptionGrid</td>\n      <td>true</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if grid feeds the consumption</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>FlowConsumptionProduction</td>\n      <td>true</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if production feeds the consumption\n      </td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>FlowGridBattery</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if battery is charging from grid</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>FlowProductionBattery</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if production is charging the battery\n      </td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>FlowProductionGrid</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the energy flow at the installation site. True if production feeds into the grid</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>GridFeedIn_W</td>\n      <td>-208</td>\n      <td>W, watt</td>\n      <td>Grid Feed in negative is consumption and positive is feed in </td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>IsSystemInstalled</td>\n      <td>1</td>\n      <td>-</td>\n      <td>System is installed or not</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>OperatingMode</td>\n      <td>2</td>\n      <td>-</td>\n      <td>Operating mode that is set on the system:\n        <ul>\n          <li>1: Manual charging or discharging via API</li>\n          <li>2: Automatic Self Consumption. Default</li>\n        </ul>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Pac_total_W</td>\n      <td>-5</td>\n      <td>W, watt</td>\n      <td>AC Power greater than ZERO is discharging Inverter AC Power less than ZERO is charging</td>\n      <td>Signed Integer</td>\n    </tr>\n    <tr>\n      <td>Production_W</td>\n      <td>28</td>\n      <td>W, watt</td>\n      <td>PV production in watts</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>RSOC</td>\n      <td>4</td>\n      <td>%, percentage</td>\n      <td>Relative state of charge</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>RemainingCapacity_W</td>\n      <td>674</td>\n      <td>Wh</td>\n      <td>Remaining capacity based on RSOC</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Sac1</td>\n      <td>75</td>\n      <td>VA, volt-ampere</td>\n      <td>Output of apparent power in VA on Phase 1</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Sac2</td>\n      <td>75</td>\n      <td>VA, volt-ampere</td>\n      <td>Output of apparent power in VA on Phase 2</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Sac3</td>\n      <td>76</td>\n      <td>VA, volt-ampere</td>\n      <td>Output of apparent power in VA on Phase 3</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>SystemStatus</td>\n      <td>OnGrid</td>\n      <td>-</td>\n      <td>String that indicates if the system is connected to the grid (\u201cOnGrid\u201d) or disconnected (\u201cOffGrid\u201d)</td>\n      <td>String</td>\n    </tr>\n    <tr>\n      <td>Timestamp</td>\n      <td>2020-12-10 11:26:01</td>\n      <td>-</td>\n      <td>Local system time</td>\n      <td>String</td>\n    </tr>\n    <tr>\n      <td>USOC</td>\n      <td>0</td>\n      <td>%, percentage</td>\n      <td>User state of charge</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Uac</td>\n      <td>230</td>\n      <td>V, volt</td>\n      <td>AC voltage in volts</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>Ubat</td>\n      <td>50</td>\n      <td>V, volt</td>\n      <td>Battery voltage in volts</td>\n      <td>Integer</td>\n    </tr>\n    <tr>\n      <td>dischargeNotAllowed</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the discharge status. True if no discharge allowed, based on battery maintenance</td>\n      <td>Boolean</td>\n    </tr>\n    <tr>\n      <td>generator_autostart</td>\n      <td>false</td>\n      <td>-</td>\n      <td>Boolean that indicates the autostart setting of the generator.</td>\n      <td>Boolean</td>\n    </tr>\n  </tbody>\n</table>\n"}}, "/api/v2/configurations": {"put": {"responses": {"200": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "produces": ["application/json"], "operationId": "putApiV2Configurations", "description": "Sets the value of these configurations:\n<ul>\n  <li><b>EM_OperatingMode</b></li>\n  <li><b>NVM_PfcFixedCosPhi</b></li>\n  <li><b>NVM_PfcIsFixedCosPhiActive</b></li>\n  <li><b>NVM_PfcIsFixedCosPhiLagging</b></li>\n  <li><b>EM_ToU_Schedule</b></li>\n  <li><b>EM_US_RE_ENABLE_MICROGRID</b></li>\n  <li><b>EM_US_USER_INPUT_TIME_ONE</b></li>\n  <li><b>EM_US_USER_INPUT_TIME_TWO</b></li>\n  <li><b>EM_US_USER_INPUT_TIME_THREE</b></li>\n  <li><b>EM_US_GENRATOR_TYPE</b></li>\n  <li><b>EM_US_GEN_POWER_SET_POINT</b></li>\n  <li><b>EM_US_CHP_Max_SOC</b></li>\n  <li><b>EM_US_CHP_Min_SOC</b></li>\n  <li><b>EM_USOC</b></li>\n</ul>\n<br>\n<p>The operating mode (<b>EM_OperatingMode</b>) can not be changed if VPP is active</p>\n<br>Example:\n<ul>\n  <li><code>curl -X PUT -d NVM_PfcFixedCosPhi=1 --header 'Auth-Token: TOKEN'\n      http://SYSTEM-IP/api/v2/configurations</code></li>\n  <li><code>curl -X PUT -d NVM_PfcFixedCosPhi=1 -d NVM_PfcIsFixedCosPhiActive=0 --header 'Auth-Token: TOKEN'\n      http://SYSTEM-IP/api/v2/configurations</code></li>\n</ul>\n", "tags": ["api"], "consumes": ["application/json"], "summary": "Sets the value of configurations (Write API)"}}, "/api/v2/latestdata": {"get": {"responses": {"200": {"description": "<pre>{\n  \"Consumption_W\": 0,\n  \"FullChargeCapacity\": 0,\n  \"GridFeedIn_W\": 0,\n  \"Pac_total_W\": 0,\n  \"Production_W\": 0,\n  \"RSOC\": 0,\n  \"SetPoint_W\": 0,\n  \"Timestamp\": \"2019-09-19 15:07:19\",\n  \"USOC\": 0,\n  \"UTC_Offet\": 2,\n  \"ic_status\": {\n    \"DC Shutdown Reason\": {\n      \"Critical BMS Alarm\": false,\n      \"Error condition in BMS initialization\": false,\n      \"HW_Shutdown\": false,\n      \"HardWire Over Voltage\": false,\n      \"HardWired Dry Signal A\": false,\n      \"HardWired Under Voltage\": false,\n      \"Initialization Timeout\": false,\n      \"Initialization of AC contactor failed\": false,\n      \"Initialization of BMS hardware failed\": false,\n      \"Initialization of DC contactor failed\": false,\n      \"Initialization of Inverter failed\": false,\n      \"Invalid or no SystemType was set\": false,\n      \"Inverter Over Temperature\": false,\n      \"Inverter Under Voltage\": false,\n      \"Manual shutdown by user\": false,\n      \"Minimum rSOC of System reached\": false,\n      \"No Setpoint received by HC\": false,\n      \"Shutdown Timer started\": false,\n      \"System Validation failed\": false,\n      \"Voltage Monitor Changed\": false\n    },\n    \"Eclipse Led\": {\n      \"Pulsing Green\": false,\n      \"Pulsing Orange\": true,\n      \"Pulsing White\": false,\n      \"Solid Red\": false\n    },\n    \"Flat Status\": {\n      \"Auto Mode\": false,\n      \"Error\": false,\n      \"Full Charge Power\": false,\n      \"Full Discharge Power\": false,\n      \"Not Connected\": false,\n      \"Spare 1\": false,\n      \"Spare 2\": false,\n      \"Spare 3\": false,\n      \"Timeout\": false\n    },\n    \"MISC Status Bits\": {\n      \"Discharge not allowed\": false,\n      \"Min System SOC\": false,\n      \"Min User SOC\": false\n    },\n    \"Microgrid Status\": {\n      \"Continious Power Violation\": false,\n      \"Discharge Current Limit Violation\": false,\n      \"Low Temperature\": false,\n      \"Max System SOC\": false,\n      \"Max User SOC\": false,\n      \"Microgrid Enabled\": false,\n      \"Min System SOC\": false,\n      \"Min User SOC\": false,\n      \"Over Charge Current\": false,\n      \"Over Discharge Current\": false,\n      \"Peak Power Violation\": false,\n      \"Protect is activated\": false,\n      \"Transition to Ongrid Pending\": false\n    },\n    \"Setpoint Priority\": {\n      \"BMS\": false,\n      \"Energy Manager\": false,\n      \"Flat\": false,\n      \"Full Charge Request\": false,\n      \"Inverter\": false,\n      \"Min User SOC\": false,\n      \"Trickle Charge\": false\n    },\n    \"System Validation\": {\n      \"Country Code Set status flag 1\": false,\n      \"Country Code Set status flag 2\": false,\n      \"Self test Error DC Wiring\": false,\n      \"Self test Postponed\": false,\n      \"Self test Precondition not met\": false,\n      \"Self test Running\": false,\n      \"Self test successful finished\": false\n    },\n    \"nrbatterymodules\": 0,\n    \"secondssincefullcharge\": 0,\n    \"statebms\": \"not ready\",\n    \"statecorecontrolmodule\": \"config\",\n    \"stateinverter\": \"not ready\",\n    \"timestamp\": \"Thu Jan 1 01:00:00 1970\"\n  }\n}\n</pre>"}, "401": {"description": "401 Unauthorized"}}, "produces": ["application/json"], "operationId": "getApiV2Latestdata", "tags": ["api"], "summary": "Gets latest data for this sonnenBatterie (Read API)", "description": "Gets latest data for this sonnenBatterie."}}, "/api/v2/setpoint/charge/{watt}": {"post": {"responses": {"201": {"description": "true"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"description": "For example: <b>2000</b>", "format": "int32", "required": true, "maximum": 1000000, "minimum": 0, "in": "path", "type": "integer", "name": "watt"}], "produces": ["application/json"], "description": "The charging power of a storage system can be controlled by setting a setpoint in watts. The corresponding value of the setpoint is kept until the battery receives a new charging or discharging value. <br>If VPP is active, the request will be rejected.", "tags": ["api"], "summary": "Sends a charge command to the battery (Write API)", "consumes": ["application/json"], "operationId": "postApiV2SetpointChargeWatt"}}, "/api/v2/configurations/{name}": {"get": {"responses": {"200": {"description": "{ \"EM_OperatingMode\": \"2\" }"}, "401": {"description": "401 Unauthorized"}}, "parameters": [{"required": true, "type": "string", "description": "EM_OperatingMode, NVM_PfcFixedCosPhi, NVM_PfcIsFixedCosPhiActive, NVM_PfcIsFixedCosPhiLagging, EM_ToU_Schedule, EM_US_RE_ENABLE_MICROGRID, EM_US_USER_INPUT_TIME_ONE, EM_US_USER_INPUT_TIME_TWO, EM_US_USER_INPUT_TIME_THREE, EM_US_GENRATOR_TYPE, EM_US_GEN_POWER_SET_POINT, EM_US_CHP_Max_SOC, EM_US_CHP_Min_SOC, EM_USOC, IC_BatteryModules, IC_InverterMaxPower_w, CM_MarketingModuleCapacity, DE_Software", "in": "path", "name": "name"}], "produces": ["application/json"], "operationId": "getApiV2ConfigurationsName", "description": "Gets the value for one of these configurations: \n <ul><li><b>EM_OperatingMode</b></li><li><b>NVM_PfcFixedCosPhi</b></li><li><b>NVM_PfcIsFixedCosPhiActive</b></li><li><b>NVM_PfcIsFixedCosPhiLagging</b></li><li><b>EM_ToU_Schedule</b></li><li><b>EM_US_RE_ENABLE_MICROGRID</b></li><li><b>EM_US_USER_INPUT_TIME_ONE</b></li><li><b>EM_US_USER_INPUT_TIME_TWO</b></li><li><b>EM_US_USER_INPUT_TIME_THREE</b></li><li><b>EM_US_GENRATOR_TYPE</b></li><li><b>EM_US_GEN_POWER_SET_POINT</b></li><li><b>EM_US_CHP_Max_SOC</b></li><li><b>EM_US_CHP_Min_SOC</b></li><li><b>EM_USOC</b></li><li><b>IC_BatteryModules</b></li><li><b>IC_InverterMaxPower_w</b></li><li><b>CM_MarketingModuleCapacity</b></li><li><b>DE_Software</b></li></ul>", "tags": ["api"], "summary": "Gets the value of a given configuration (Read API)"}}, "/api/v2/powermeter": {"get": {"responses": {"200": {"description": "<pre>[\n  {\n    \"a_l1\": 0,\n    \"a_l2\": 0,\n    \"a_l3\": 0,\n    \"channel\": 1,\n    \"deviceid\": 4,\n    \"direction\": \"production\",\n    \"error\": -1,\n    \"kwh_exported\": 0,\n    \"kwh_imported\": 0,\n    \"v_l1_l2\": 0,\n    \"v_l1_n\": 0,\n    \"v_l2_l3\": 0,\n    \"v_l2_n\": 0,\n    \"v_l3_l1\": 0,\n    \"v_l3_n\": 0,\n    \"va_total\": 0,\n    \"var_total\": 0,\n    \"w_l1\": 0,\n    \"w_l2\": 0,\n    \"w_l3\": 0,\n    \"w_total\": 0\n  },\n  {\n    \"a_l1\": 0,\n    \"a_l2\": 0,\n    \"a_l3\": 0,\n    \"channel\": 2,\n    \"deviceid\": 4,\n    \"direction\": \"consumption\",\n    \"error\": -1,\n    \"kwh_exported\": 0,\n    \"kwh_imported\": 0,\n    \"v_l1_l2\": 0,\n    \"v_l1_n\": 0,\n    \"v_l2_l3\": 0,\n    \"v_l2_n\": 0,\n    \"v_l3_l1\": 0,\n    \"v_l3_n\": 0,\n    \"va_total\": 0,\n    \"var_total\": 0,\n    \"w_l1\": 0,\n    \"w_l2\": 0,\n    \"w_l3\": 0,\n    \"w_total\": 0\n  }\n]</pre>"}, "401": {"description": "401 Unauthorized"}}, "produces": ["application/json"], "operationId": "getApiV2Powermeter", "tags": ["api"], "summary": "Gets the latest power-meter measurements (Read API)", "description": "Gets the latest power-meter measurements."}}}, "host": "= ip of the system", "swagger": "2.0", "produces": ["application/json"]};
 
   // Build a system
   const ui = SwaggerUIBundle({
